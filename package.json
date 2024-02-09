@@ -25,7 +25,8 @@
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json -c tslint.json",
-    "publish": "npm run build && npm publish --access=public"
+    "publish": "npm run build && npm publish --access=public",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "@nestjs/common": "^6.10.11 || ^7.0.0 || ^8.0.0 || ^10.0.0",
