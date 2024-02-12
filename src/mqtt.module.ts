@@ -9,6 +9,7 @@ import { MQTT_CLIENT_INSTANCE, MQTT_OPTION_PROVIDER } from './mqtt.constants';
 
 @Module({
   imports: [DiscoveryModule],
+  exports: [MQTT_CLIENT_INSTANCE],
 })
 export class MqttModule {
   public static forRootAsync(options: MqttModuleAsyncOptions): DynamicModule {
