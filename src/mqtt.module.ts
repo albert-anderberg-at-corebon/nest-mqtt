@@ -23,6 +23,10 @@ export class MqttModule {
         MqttExplorer,
         MqttService,
       ],
+      exports: [
+        MqttService,
+        MQTT_CLIENT_INSTANCE,
+      ]
     };
   }
 
@@ -39,6 +43,10 @@ export class MqttModule {
         MqttExplorer,
         MqttService,
       ],
+      exports: [
+        MqttService,
+        MQTT_CLIENT_INSTANCE,
+      ]
     };
   }
 }
