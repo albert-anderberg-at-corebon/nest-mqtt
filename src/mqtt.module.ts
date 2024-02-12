@@ -25,7 +25,6 @@ export class MqttModule {
       ],
       exports: [
         MqttService,
-        MQTT_CLIENT_INSTANCE,
       ]
     };
   }
@@ -45,7 +44,6 @@ export class MqttModule {
       ],
       exports: [
         MqttService,
-        MQTT_CLIENT_INSTANCE,
       ]
     };
   }
